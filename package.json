@@ -1,14 +1,14 @@
 {
   "name": "file-upload",
   "version": "1.0.0",
-  "description": "",
+  "description": "image file upload",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "monsif Driouach",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

@@ -1,5 +1,5 @@
 # image-upload
-upload images using nodejs with just a bit of form security.
+upload images using nodejs with just a bit of security and simple html and css page.
 
 # Get started.
 - Install node js on your machine.

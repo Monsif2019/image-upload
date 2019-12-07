@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const multer = require('multer')
 const morgan = require('morgan')
 const shortid = require('shortid')
+const fs = require('fs')
 const upload = multer({ storage: multer.diskStorage({
   destination: (req,file,cd) =>{
     cd(null, __dirname + '/public/uploads/')
@@ -30,10 +31,12 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.static(__dirname + '/public'))
 
-
+// get upload page
 app.get('/upload', (req,res) =>{
   res.render('upload')
 })
+
+// handling image post request 
 app.post('/upload' ,(req, res) => {
   upload.single('image')(req,res, (err) => {
     if(err) return res.render('upload', { error: err.message })

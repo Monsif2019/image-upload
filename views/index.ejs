@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Funny</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-light" style="background-color: #2b2b2b;">
+          <a href="/" class="navbar-brand">FUNNY</a>
+          <div class="form-inline">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit"> <b>LOGIN</b></button>
+          </div>
+        </nav>
+      <div class="container">
+    <% for(var i=0; i < 6;i++ ){ %>
+        <div class="post-video">
+          <div class="user-info">
+            <img src="images/house.png" alt="">
+            <a href="#" class="account-name">account-name</a>
+            <a href="#" class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg></a>
+          </div>
+          <div class="post">
+            <img  src="images/sn.jpg" alt="">
+          </div>
+          <div class="post-comments">
+            <div class="icons-container">
+              <!-- <a href="#" class="option-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg></a> -->
+              <table >
+                <tr>
+                  <td>
+                      <div class="like grow">
+                          <a href="#" id="like"><i id="like" class="fa fa-thumbs-up fa-2x like" aria-hidden="true"></i></a>
+                        </div>
+                  </td>
+                  <td>
+                      <div class="dislike grow">
+                      <a href="#" id="dislike"><i class="fa fa-thumbs-down fa-2x like" aria-hidden="true"></i></a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="like grow">
+                        <a href="#" id="share"><i class="fa fa-share fa-2x like" aria-hidden="true"></i></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span id="like_count">0</span></td>
+                  <td><span id="dislike_count">0</span></td>
+                  <td><span id="share">0</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+<% } %>
+  </div>
+</div>
+</body>
+<script src="/js/hanlder.js"></script>
+</html>

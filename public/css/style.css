@@ -1,0 +1,230 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: sans-serif;
+    -webkit-tap-highlight-color: transparent;   /* So that mobiles don't highlight complete div element! */
+    -moz-user-tap-highlight-color: transparent; /* So that mobiles don't highlight complete div element! */
+    -ms-user-tap-highlight-color: transparent;  /* So that mobiles don't*/
+
+}
+.wrapper{
+    background-color: #e2e2e2;
+}
+.post-video{
+    margin: 0 auto;
+    width: 650px;
+    height: 650px;
+    margin-top:40px;
+    background-color: white;
+    border: 1px solid rgb(168, 168, 168);
+}
+.user-info img {
+    width: 30px;
+    float: left;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 13px;
+
+}
+.option-icon{
+    float: right;
+    margin-top:5px;
+    margin-right: 5px;
+}
+.account-name {
+    float: left;
+    color:black;
+    font-family: monospace 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+
+.post{
+    width: 100%;
+    height:450px;
+}
+.post img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.user-info{
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    border-bottom:  1px solid rgb(168, 168, 168);
+    padding-top: 8px;
+    padding-left:8px;
+}
+
+.post-comments{
+    width: 100%;
+    height:150px;
+    background-color:yellow;
+}
+
+.icons-container {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+
+}
+
+.icons-container table {
+    width: 50%;
+    max-width: 200px;
+    table-layout: fixed;
+    margin-left:auto;
+    margin-right:auto;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+
+}
+
+.icons-container table td {
+
+    text-align: center;
+}
+.like,
+.dislike {
+  display: inline-block;
+  cursor: pointer;
+ margin: 2px;
+
+}
+a:visited {
+    color: #3d3d3d;
+    text-decoration: none
+}
+.dislike:hover,
+.like:hover {
+  color: #b9b9b9;
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+}
+
+.file-upload {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #1FB264;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #1FB264;
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #15824B;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}

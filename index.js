@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const bodyParser = require('body-parser')
 const multer = require('multer')
 const morgan = require('morgan')
 const shortid = require('shortid')
@@ -26,7 +25,6 @@ app.set('views', path.join(__dirname, 'views'))
 
 // use
 app.use(morgan('dev'))
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.static(__dirname + '/public'))
